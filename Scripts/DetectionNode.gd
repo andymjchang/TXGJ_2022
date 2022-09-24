@@ -4,6 +4,9 @@ var pressed = false
 var active = true
 var correct = false
 
+func _ready():
+	$Sprite.frame = (randi() % 3)
+
 func _process(_delta):
 	
 	pressed = false
@@ -13,14 +16,14 @@ func _process(_delta):
 func _on_Area2D_mouse_entered():
 	if pressed:
 		active = false
-		$Polygon2D.visible = active
+		$Sprite.visible = active
 
 func reset_active():
 	active = true
-	$Polygon2D.visible = active
+	$Sprite.visible = active
 
-func _on_Area2D_input_event(viewport, event, shape_idx):
+func _on_Area2D_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
 			active = false
-			$Polygon2D.visible = active
+			$Sprite.visible = active

@@ -19,3 +19,8 @@ func reset_active():
 	active = true
 	$Polygon2D.visible = active
 
+func _on_Area2D_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton:
+		if event.is_pressed():
+			active = false
+			$Polygon2D.visible = active

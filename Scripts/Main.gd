@@ -4,8 +4,8 @@ onready var detectionScene = preload("res://Scenes/DetectionNode.tscn")
 
 func _ready():
 	# create rows and columns of DetectionNodes
-	for i in 36:
-		for j in 36:
+	for i in 30:
+		for j in 30:
 			var detectionInstance = detectionScene.instance()
 			add_child(detectionInstance)
 			detectionInstance.position = Vector2((i * 25), (j * 25))

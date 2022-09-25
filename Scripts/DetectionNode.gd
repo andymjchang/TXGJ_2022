@@ -27,3 +27,8 @@ func _on_Area2D_input_event(_viewport, event, _shape_idx):
 		if event.is_pressed():
 			active = false
 			$Sprite.visible = active
+
+
+func _on_Area2D_area_entered(area):
+	if area.is_in_group("bird"):
+		$Sprite.visible = false

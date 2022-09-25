@@ -4,7 +4,7 @@
 [ext_resource path="res://Assets/block_sheet.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 12.5, 12.5 )
+extents = Vector2( 2.5, 2.5 )
 
 [node name="DetectionNode" type="Node2D" groups=["DetectionNodeGroup"]]
 script = ExtResource( 1 )
@@ -13,6 +13,7 @@ script = ExtResource( 1 )
 position = Vector2( 12.5, 12.5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -10, -10 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -20,5 +21,6 @@ texture = ExtResource( 2 )
 centered = false
 hframes = 3
 
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="input_event" from="Area2D" to="." method="_on_Area2D_input_event"]
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_Area2D_mouse_entered"]

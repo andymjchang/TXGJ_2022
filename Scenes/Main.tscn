@@ -1,15 +1,74 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Assets/764445-large-watercolor-backgrounds-2560x1706-1969457504.jpg" type="Texture" id=1]
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/DrawingObject.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/table.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/JigsawHolder.tscn" type="PackedScene" id=5]
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="bg" type="Sprite" parent="."]
-position = Vector2( -373, -864 )
+position = Vector2( -4, -295 )
+scale = Vector2( 0.333, 0.333 )
 texture = ExtResource( 1 )
 centered = false
 
+[node name="Table" type="Sprite" parent="."]
+position = Vector2( 137, 32 )
+texture = ExtResource( 4 )
+centered = false
+
 [node name="DrawingObject" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0, 20 )
+
+[node name="Placeholders" type="Node2D" parent="."]
+
+[node name="JigsawHolder" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 140, 35 )
+
+[node name="JigsawHolder2" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 190, 35 )
+
+[node name="JigsawHolder3" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 240, 35 )
+
+[node name="JigsawHolder4" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 290, 35 )
+
+[node name="JigsawHolder5" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 140, 85 )
+
+[node name="JigsawHolder6" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 190, 85 )
+
+[node name="JigsawHolder7" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 240, 85 )
+
+[node name="JigsawHolder8" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 290, 85 )
+
+[node name="JigsawHolder9" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 140, 135 )
+
+[node name="JigsawHolder10" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 190, 135 )
+
+[node name="JigsawHolder11" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 240, 135 )
+
+[node name="JigsawHolder12" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 290, 135 )
+
+[node name="JigsawHolder13" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 140, 185 )
+
+[node name="JigsawHolder14" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 190, 185 )
+
+[node name="JigsawHolder15" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 240, 185 )
+
+[node name="JigsawHolder16" parent="Placeholders" instance=ExtResource( 5 )]
+position = Vector2( 290, 185 )

@@ -4,219 +4,219 @@
 
 [sub_resource type="AtlasTexture" id=42]
 atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 480, 270 )
+region = Rect2( 0, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=43]
 atlas = ExtResource( 1 )
-region = Rect2( 480, 0, 480, 270 )
+region = Rect2( 250, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=44]
 atlas = ExtResource( 1 )
-region = Rect2( 960, 0, 480, 270 )
+region = Rect2( 500, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=45]
 atlas = ExtResource( 1 )
-region = Rect2( 1440, 0, 480, 270 )
+region = Rect2( 750, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=46]
 atlas = ExtResource( 1 )
-region = Rect2( 1920, 0, 480, 270 )
+region = Rect2( 1000, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=47]
 atlas = ExtResource( 1 )
-region = Rect2( 2400, 0, 480, 270 )
+region = Rect2( 1250, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=48]
 atlas = ExtResource( 1 )
-region = Rect2( 2880, 0, 480, 270 )
+region = Rect2( 1500, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=49]
 atlas = ExtResource( 1 )
-region = Rect2( 3360, 0, 480, 270 )
+region = Rect2( 1750, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=50]
 atlas = ExtResource( 1 )
-region = Rect2( 3840, 0, 480, 270 )
+region = Rect2( 2000, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=51]
 atlas = ExtResource( 1 )
-region = Rect2( 4320, 0, 480, 270 )
+region = Rect2( 2250, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=52]
 atlas = ExtResource( 1 )
-region = Rect2( 4800, 0, 480, 270 )
+region = Rect2( 2500, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=53]
 atlas = ExtResource( 1 )
-region = Rect2( 5280, 0, 480, 270 )
+region = Rect2( 2750, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=54]
 atlas = ExtResource( 1 )
-region = Rect2( 5760, 0, 480, 270 )
+region = Rect2( 3000, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=55]
 atlas = ExtResource( 1 )
-region = Rect2( 6240, 0, 480, 270 )
+region = Rect2( 3250, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=56]
 atlas = ExtResource( 1 )
-region = Rect2( 6720, 0, 480, 270 )
+region = Rect2( 3500, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=57]
 atlas = ExtResource( 1 )
-region = Rect2( 7200, 0, 480, 270 )
+region = Rect2( 3750, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=58]
 atlas = ExtResource( 1 )
-region = Rect2( 7680, 0, 480, 270 )
+region = Rect2( 4000, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=59]
 atlas = ExtResource( 1 )
-region = Rect2( 8160, 0, 480, 270 )
+region = Rect2( 4250, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=60]
 atlas = ExtResource( 1 )
-region = Rect2( 8640, 0, 480, 270 )
+region = Rect2( 4500, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=61]
 atlas = ExtResource( 1 )
-region = Rect2( 9120, 0, 480, 270 )
+region = Rect2( 4750, 0, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=62]
 atlas = ExtResource( 1 )
-region = Rect2( 0, 270, 480, 270 )
+region = Rect2( 0, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=63]
 atlas = ExtResource( 1 )
-region = Rect2( 480, 270, 480, 270 )
+region = Rect2( 250, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=64]
 atlas = ExtResource( 1 )
-region = Rect2( 960, 270, 480, 270 )
+region = Rect2( 500, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=65]
 atlas = ExtResource( 1 )
-region = Rect2( 1440, 270, 480, 270 )
+region = Rect2( 750, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=66]
 atlas = ExtResource( 1 )
-region = Rect2( 1920, 270, 480, 270 )
+region = Rect2( 1000, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=67]
 atlas = ExtResource( 1 )
-region = Rect2( 2400, 270, 480, 270 )
+region = Rect2( 1250, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=68]
 atlas = ExtResource( 1 )
-region = Rect2( 2880, 270, 480, 270 )
+region = Rect2( 1500, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=69]
 atlas = ExtResource( 1 )
-region = Rect2( 3360, 270, 480, 270 )
+region = Rect2( 1750, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=70]
 atlas = ExtResource( 1 )
-region = Rect2( 3840, 270, 480, 270 )
+region = Rect2( 2000, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=71]
 atlas = ExtResource( 1 )
-region = Rect2( 4320, 270, 480, 270 )
+region = Rect2( 2250, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=72]
 atlas = ExtResource( 1 )
-region = Rect2( 4800, 270, 480, 270 )
+region = Rect2( 2500, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=73]
 atlas = ExtResource( 1 )
-region = Rect2( 5280, 270, 480, 270 )
+region = Rect2( 2750, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=74]
 atlas = ExtResource( 1 )
-region = Rect2( 5760, 270, 480, 270 )
+region = Rect2( 3000, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=75]
 atlas = ExtResource( 1 )
-region = Rect2( 6240, 270, 480, 270 )
+region = Rect2( 3250, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=76]
 atlas = ExtResource( 1 )
-region = Rect2( 6720, 270, 480, 270 )
+region = Rect2( 3500, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=77]
 atlas = ExtResource( 1 )
-region = Rect2( 7200, 270, 480, 270 )
+region = Rect2( 3750, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=78]
 atlas = ExtResource( 1 )
-region = Rect2( 7680, 270, 480, 270 )
+region = Rect2( 4000, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=79]
 atlas = ExtResource( 1 )
-region = Rect2( 8160, 270, 480, 270 )
+region = Rect2( 4250, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=80]
 atlas = ExtResource( 1 )
-region = Rect2( 8640, 270, 480, 270 )
+region = Rect2( 4500, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=81]
 atlas = ExtResource( 1 )
-region = Rect2( 9120, 270, 480, 270 )
+region = Rect2( 4750, 250, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=82]
 atlas = ExtResource( 1 )
-region = Rect2( 0, 540, 480, 270 )
+region = Rect2( 0, 500, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=83]
 atlas = ExtResource( 1 )
-region = Rect2( 480, 540, 480, 270 )
+region = Rect2( 250, 500, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=84]
 atlas = ExtResource( 1 )
-region = Rect2( 960, 540, 480, 270 )
+region = Rect2( 500, 500, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=85]
 atlas = ExtResource( 1 )
-region = Rect2( 1440, 540, 480, 270 )
+region = Rect2( 750, 500, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=86]
 atlas = ExtResource( 1 )
-region = Rect2( 1920, 540, 480, 270 )
+region = Rect2( 1000, 500, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=87]
 atlas = ExtResource( 1 )
-region = Rect2( 2400, 540, 480, 270 )
+region = Rect2( 1250, 500, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=88]
 atlas = ExtResource( 1 )
-region = Rect2( 2880, 540, 480, 270 )
+region = Rect2( 1500, 500, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=89]
 atlas = ExtResource( 1 )
-region = Rect2( 3360, 540, 480, 270 )
+region = Rect2( 1750, 500, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=90]
 atlas = ExtResource( 1 )
-region = Rect2( 3840, 540, 480, 270 )
+region = Rect2( 2000, 500, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=91]
 atlas = ExtResource( 1 )
-region = Rect2( 4320, 540, 480, 270 )
+region = Rect2( 2250, 500, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=92]
 atlas = ExtResource( 1 )
-region = Rect2( 4800, 540, 480, 270 )
+region = Rect2( 2500, 500, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=93]
 atlas = ExtResource( 1 )
-region = Rect2( 5280, 540, 480, 270 )
+region = Rect2( 2750, 500, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=94]
 atlas = ExtResource( 1 )
-region = Rect2( 5760, 540, 480, 270 )
+region = Rect2( 3000, 500, 250, 250 )
 
 [sub_resource type="AtlasTexture" id=95]
 atlas = ExtResource( 1 )
-region = Rect2( 6240, 540, 480, 270 )
+region = Rect2( 3250, 500, 250, 250 )
 
 [sub_resource type="SpriteFrames" id=41]
 animations = [ {
@@ -229,6 +229,8 @@ animations = [ {
 [node name="DrawingObject" type="Node2D"]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 115, 10 )
 frames = SubResource( 41 )
 frame = 1
 centered = false

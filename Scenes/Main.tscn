@@ -1,10 +1,31 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=14 format=2]
 
+[ext_resource path="res://Assets/background.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/DrawingObject.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Assets/table.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/Jigsaw.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/JigsawHolder.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Assets/watercolor-light-gray-gradient-background-texture_145343-639-1686862271.jpg" type="Texture" id=6]
+[ext_resource path="res://Assets/table.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/UndoButton.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/CheckButton.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Assets/reference_drawing-sheet.png" type="Texture" id=10]
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 102, 130 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 10 )
+region = Rect2( 102, 0, 102, 130 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 2 )
@@ -14,10 +35,27 @@ position = Vector2( 236, 136 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 6 )
 
+[node name="bg2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 484, 134 )
+rotation = -1.5708
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
+
 [node name="Table" type="Sprite" parent="."]
 position = Vector2( 137, 32 )
-texture = ExtResource( 4 )
+texture = ExtResource( 7 )
 centered = false
+
+[node name="Background" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="UndoButton" parent="." instance=ExtResource( 8 )]
+position = Vector2( 171, 3 )
+
+[node name="CheckButton" parent="." instance=ExtResource( 9 )]
+position = Vector2( 260, 3 )
 
 [node name="DrawingObject" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, 20 )
@@ -29,45 +67,134 @@ position = Vector2( 140, 35 )
 
 [node name="JigsawHolder2" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 190, 35 )
+correctIndex = 1
 
 [node name="JigsawHolder3" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 240, 35 )
+correctIndex = 2
 
 [node name="JigsawHolder4" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 290, 35 )
+correctIndex = 3
 
 [node name="JigsawHolder5" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 140, 85 )
+correctIndex = 4
 
 [node name="JigsawHolder6" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 190, 85 )
+correctIndex = 5
 
 [node name="JigsawHolder7" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 240, 85 )
+correctIndex = 6
 
 [node name="JigsawHolder8" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 290, 85 )
+correctIndex = 7
 
 [node name="JigsawHolder9" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 140, 135 )
+correctIndex = 4
 
 [node name="JigsawHolder10" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 190, 135 )
+correctIndex = 9
 
 [node name="JigsawHolder11" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 240, 135 )
+correctIndex = 10
 
 [node name="JigsawHolder12" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 290, 135 )
+correctIndex = 7
 
 [node name="JigsawHolder13" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 140, 185 )
+correctIndex = 12
 
 [node name="JigsawHolder14" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 190, 185 )
+correctIndex = 13
 
 [node name="JigsawHolder15" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 240, 185 )
+correctIndex = 14
 
 [node name="JigsawHolder16" parent="Placeholders" instance=ExtResource( 5 )]
 position = Vector2( 290, 185 )
+correctIndex = 15
+
+[node name="Pieces" type="Node2D" parent="."]
+
+[node name="Jigsaw" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 362, 22 )
+index = 12
+
+[node name="Jigsaw2" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 418, 22 )
+index = 10
+
+[node name="Jigsaw3" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 475, 22 )
+index = 4
+
+[node name="Jigsaw4" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 531, 22 )
+index = 5
+
+[node name="Jigsaw5" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 362, 78 )
+index = 9
+
+[node name="Jigsaw6" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 418, 78 )
+index = 3
+
+[node name="Jigsaw7" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 476, 79 )
+index = 4
+
+[node name="Jigsaw8" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 531, 78 )
+
+[node name="Jigsaw9" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 362, 134 )
+index = 15
+
+[node name="Jigsaw10" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 418, 134 )
+index = 14
+
+[node name="Jigsaw11" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 475, 134 )
+index = 7
+
+[node name="Jigsaw12" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 531, 134 )
+index = 13
+
+[node name="Jigsaw13" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 362, 190 )
+index = 1
+
+[node name="Jigsaw14" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 418, 190 )
+index = 2
+
+[node name="Jigsaw15" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 475, 190 )
+index = 6
+
+[node name="Jigsaw16" parent="Pieces" instance=ExtResource( 4 )]
+position = Vector2( 530, 190 )
+index = 7
+
+[node name="ReferenceDrawing-sheet" type="AnimatedSprite" parent="."]
+position = Vector2( 69, 131 )
+frames = SubResource( 1 )
+frame = 1
+playing = true
+
+[connection signal="startAnim" from="." to="DrawingObject" method="_on_Main_startAnim"]
+[connection signal="verify" from="CheckButton" to="." method="_on_CheckButton_verify"]
